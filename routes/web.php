@@ -45,9 +45,9 @@ Route::get('/medcine/pharmacien' , 'Auth\Medcine\MedecinDashController@ShowDashb
 // Route::get('/medcine/homeMS', function () {
 //     return view('auth.medcine.homeMS');
 // })->middleware('verified')->middleware('medcineMS');
-Route::get('patient/register' , 'Auth\Patient\patientRegisterController@ShowRegisterForm')->name('patient.register');
-Route::post('patient/register' , 'Auth\Patient\patientRegisterController@ShowRegisterForm')->name('patient.register');
-Route::post('patient/registerR', 'Auth\Patient\patientRegisterController@register')->name('patient.registerR');
+Route::get('patient/register' , 'Auth\Patient\PatientRegisterController@ShowRegisterForm')->name('patient.register');
+Route::post('patient/register' , 'Auth\Patient\PatientRegisterController@ShowRegisterForm')->name('patient.register');
+Route::post('patient/registerR', 'Auth\Patient\PatientRegisterController@register')->name('patient.registerR');
 
 
 Route::get('patient/login', 'Auth\Patient\PatientLoginController@showLoginForm')->name('patient.login');
