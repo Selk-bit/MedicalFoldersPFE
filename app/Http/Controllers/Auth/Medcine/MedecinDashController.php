@@ -74,7 +74,7 @@ class MedecinDashController extends Controller
             
             $nmbrP = \DB::select("select count(*) as nmbr from ( SELECT patient , medcine from dossier_medicals GROUP by patient , medcine having medcine = ? ) as sub " , [$id]);
 
-            $dActif = \DB::select("SELECT count(*) as nmbr from (select * from dossier_medicals where dateFin is null and medcine = ?) as sub" , [$id]);
+            $dActif = \DB::select("SELECT count(*) as nmbr from (select * from dossier_medicals where dossier_medicals.dateFin is null and medcine = ?) as sub" , [$id]);
 
             $dRedirige = \DB::select("SELECT count(*) as nmbr from ( select d.id from redirections r, dossier_medicals d where r.dossier_medical = d.id and d.medcine = ? ) as sub" , [$id]);
 
