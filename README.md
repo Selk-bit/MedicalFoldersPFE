@@ -2,10 +2,15 @@ A detailed report for the project with screenshots : https://onedrive.live.com/v
 
 
 To kick-start the application, you need first to run the following commands:
+<br>
 -***compose install***
+<br>
 -***npm install***
+<br>
 -***php artisan migrate*** (after creating the database to which the migration is performed and changing the database information in the ***env*** file)
+<br>
 -***php artisan db: seed***
+<br>
 -***php artisan serve***
 
 For email verification, you need to create a mailtrap account in
