@@ -19,4 +19,4 @@ Follow these instructions to set up the application on your local machine for de
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/patient-medical-data-app.git](https://github.com/Selk-bit/MedicalFoldersPFE.git)
+   git clone https://github.com/Selk-bit/MedicalFoldersPFE.git
